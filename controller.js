@@ -8,7 +8,6 @@ translate.key = API_KEY
 module.exports = {
     words: async (parent, args) => {
         const words = args.text.split(',') 
-        console.log(words)
         const results = [] 
         const browser = await puppeteer.launch({headless: true})
         const page = await browser.newPage()
@@ -45,7 +44,6 @@ console.log(ipas)
         }
 
         browser.close()
-        console.log(results)
         return results 
     }
 }

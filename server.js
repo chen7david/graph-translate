@@ -1,5 +1,5 @@
 const { ApolloServer, gql } = require('apollo-server')
-const { PORT } = require('./config')
+const { PORT, HOST } = require('./config')
 const controller = require('./controller')
 const typeDefs = gql`
     type Word {
@@ -27,4 +27,4 @@ const server = new ApolloServer({
     resolvers
 })
 
-server.listen(PORT || 5000).then(({url}) => { console.log(`server running at ${url}`)})
+server.listen(PORT || 5000, HOST).then(({url}) => { console.log(`server running at ${url}`)})
