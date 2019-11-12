@@ -1,0 +1,25 @@
+{
+  "name": "graph-translate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen7david/graph-translate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chen7david/graph-translate/issues"
+  },
+  "homepage": "https://github.com/chen7david/graph-translate#readme",
+  "dependencies": {
+    "apollo-server": "^2.9.7",
+    "puppeteer": "^2.0.0",
+    "translate": "^1.1.0"
+  }
+}
